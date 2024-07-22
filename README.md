@@ -24,20 +24,18 @@ Install the `PyPDF2` library using `pip`:
 
 ### Running the Script
 
-1. Download `pdf-dedup.py`
-2. Rename your source PDF file to `input.pdf` and copy it to the directory of `pdf-dedup.py`
+1. Download `pdf-dedup.py` 
+2. Rename your source PDF file to `input.pdf` and copy it to the directory of `pdf-dedup.py` 
 3. Then, run the script: `python pdf-dedup.py`
 4. Finally, the deduplicated PDF file will be saved as `output.pdf` in the same directory
 
 ### Cautions and Warnings
 
-• Text Extraction Limitations: The deduplication is based on text extraction, so pages that appear visually identical but have different underlying text (e.g., images or different formatting) may not be detected as duplicates.
+• **Text Extraction Limitations**: The deduplication is based on text extraction, so pages that appear visually identical but have different underlying text (e.g., images or different formatting) may not be detected as duplicates.
 
-• Incomplete Text Extraction: Some complex PDFs may have text extraction issues, resulting in incomplete or inaccurate deduplication.
+• **Incomplete Text Extraction**: Some complex PDFs may have text extraction issues, resulting in incomplete or inaccurate deduplication.
 
-• File Overwriting: Ensure that the output file path is different from the input file path to avoid accidental overwriting of your original file.
-
-• Dependency on PyPDF2: The script relies on the PyPDF2 library, which may have its own limitations and bugs.
+• **Dependency on PyPDF2**: The script relies on the PyPDF2 library, which may have its own limitations and bugs.
 
 ## Tips for Effective Deduplication
 
