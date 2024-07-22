@@ -32,14 +32,19 @@ Install the `PyPDF2` library using `pip`:
 ### Cautions and Warnings
 
 • Text Extraction Limitations: The deduplication is based on text extraction, so pages that appear visually identical but have different underlying text (e.g., images or different formatting) may not be detected as duplicates.
+
 • Incomplete Text Extraction: Some complex PDFs may have text extraction issues, resulting in incomplete or inaccurate deduplication.
+
 • File Overwriting: Ensure that the output file path is different from the input file path to avoid accidental overwriting of your original file.
+
 • Dependency on PyPDF2: The script relies on the PyPDF2 library, which may have its own limitations and bugs.
 
 ## Tips for Effective Deduplication
 
 • **Backup**: Always keep a backup of the original PDF.
+
 • **Automate Cautiously**: Automated tools and scripts can sometimes miss duplicates that are visually identical but slightly different at a byte level. If possible, verify the results manually.
+
 • **Check Page Resequencing**: Ensure that removing duplicates doesn’t disrupt the document's logical sequence.
 
 ## Acknowledgments
